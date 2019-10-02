@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="calc.js"></script>
+    
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <p>Insira o primeiro numero: <input type="number" id="a" /></p>
+    <p>Insira o segundo numero: <input type="number" id="b" /></p>
+    <button onclick="soma()">Soma(+)</button>
+    <button onclick="sub()">Subtrair(-)</button>
+    <button onclick="mult()">Multiplicar(x)</button>
+    <button onclick="divi()">Dividir(÷)</button>
+    <p>Resultado: <input type="number" id="r" readonly /></p>
+
+    <script>
+        function soma() {
+    var a = +document.getElementById('a').value;
+    var b = +document.getElementById('b').value;
+    
+    document.getElementById('r').value = a + b;
+
+}
+function sub() {
+
+    var a = +document.getElementById('a').value;
+    var b = +document.getElementById('b').value;
+
+    document.getElementById('r').value = a - b;
+
+}
+function mult(){
+
+    var a = +document.getElementById('a').value;
+    var b = +document.getElementById('b').value;
+
+    document.getElementById('r').value = a * b;
+
+}
+function divi(){
+
+    var a = +document.getElementById('a').value;
+    var b = +document.getElementById('b').value;
+
+    document.getElementById('r').value = a / b;
+}
+    </script>
+
+</body>
+
+</html>
